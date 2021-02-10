@@ -6,9 +6,10 @@ This project contains the basic files and folder setup needed for a TFTP PXELINU
 It currently has support for network (PXE) installing:
 
 * Centos 6.x
-* Centos 7.0
+* Centos 7.0 { Manual,Auto }
 * Fedora 24
 * Ubuntu 16.04 (Xenial)
+* Ubuntu 20.04 (Focal { Desktop,Server })
 
 To use it, you need to
 
@@ -18,6 +19,7 @@ To use it, you need to
 3. Setup your DHCP to point at the TFTP server (using DHCP option 66 "next-server" if located on a different IP to the DHCP server)
 4. Setup your DHCP to offer the PXELINUX.0 as the boot filename (DHCP option 67).
 5. Edit the pxelinux.cfg/default file to add in your PXE boot options. I've included an example one for CentOS
+6. copy linux kernel relative resources,such as vmlinuz、initrd from iso image to repo NFS or HTTP server 
 
 
 Further instructions
