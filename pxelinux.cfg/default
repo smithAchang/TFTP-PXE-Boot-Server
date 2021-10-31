@@ -1,4 +1,4 @@
-ddefault menu.c32
+default menu.c32
 prompt 0
 timeout 100
 ONTIMEOUT Ubuntu-20.04-Focal
